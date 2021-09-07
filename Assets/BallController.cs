@@ -11,7 +11,7 @@ public class BallController : MonoBehaviour
 
     // Besarnya gaya awal yang diberikan untuk mendorong bola
     public float xInitialForce;
-    public float yInitialForce = 10f;
+    public float yInitialForce;
 
     void Start()
     {
@@ -37,6 +37,7 @@ public class BallController : MonoBehaviour
     }
     void PushBall()
     {
+        float yRandomInitialForce = 10f;
         // Tentukan nilai acak antara 0 (inklusif) dan 2 (eksklusif)
         float randomDirection = Random.Range(0, 2);
 
